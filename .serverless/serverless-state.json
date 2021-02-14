@@ -181,7 +181,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/node-business-rules/dev/1613267711127-2021-02-14T01:55:11.127Z/node-business-rules.zip"
+                "S3Key": "serverless/node-business-rules/dev/1613276720412-2021-02-14T04:25:20.412Z/node-business-rules.zip"
               },
               "Handler": "handler.hello",
               "Runtime": "nodejs12.x",
@@ -206,7 +206,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/node-business-rules/dev/1613267711127-2021-02-14T01:55:11.127Z/node-business-rules.zip"
+                "S3Key": "serverless/node-business-rules/dev/1613276720412-2021-02-14T04:25:20.412Z/node-business-rules.zip"
               },
               "Handler": "handler.rules",
               "Runtime": "nodejs12.x",
@@ -224,24 +224,24 @@
               "RulesLogGroup"
             ]
           },
-          "HelloLambdaVersion09fuXOWBdoFtUsCA9u3GCaQAuSf6QCfjcFd2XxlMNpc": {
+          "HelloLambdaVersionvhCAkuEPjblAMcN1iWjnxxZi3iADmhfQOM6YTNRHNw": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "/rmduWQ7Jmy02wQVelyVwZeeEBuc64yKmAQamqJOKI4="
+              "CodeSha256": "PNxneRsN7SbI1MjNHoAWTfFZXveS8sgQTGItCUIU8jI="
             }
           },
-          "RulesLambdaVersionelXMURV1188ffjvybv096yxaC6ZpbRHjy55DnenXc": {
+          "RulesLambdaVersionKhn12MgIPGCeJAzh2zg3urkpzwerZIXy7sZMVlsA": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "RulesLambdaFunction"
               },
-              "CodeSha256": "/rmduWQ7Jmy02wQVelyVwZeeEBuc64yKmAQamqJOKI4="
+              "CodeSha256": "PNxneRsN7SbI1MjNHoAWTfFZXveS8sgQTGItCUIU8jI="
             }
           },
           "ApiGatewayRestApi": {
@@ -396,7 +396,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1613267710279": {
+          "ApiGatewayDeployment1613276719604": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -493,13 +493,13 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersion09fuXOWBdoFtUsCA9u3GCaQAuSf6QCfjcFd2XxlMNpc"
+              "Ref": "HelloLambdaVersionvhCAkuEPjblAMcN1iWjnxxZi3iADmhfQOM6YTNRHNw"
             }
           },
           "RulesLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "RulesLambdaVersionelXMURV1188ffjvybv096yxaC6ZpbRHjy55DnenXc"
+              "Ref": "RulesLambdaVersionKhn12MgIPGCeJAzh2zg3urkpzwerZIXy7sZMVlsA"
             }
           },
           "ServiceEndpoint": {
@@ -630,7 +630,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersion09fuXOWBdoFtUsCA9u3GCaQAuSf6QCfjcFd2XxlMNpc"
+        "versionLogicalId": "HelloLambdaVersionvhCAkuEPjblAMcN1iWjnxxZi3iADmhfQOM6YTNRHNw"
       },
       "rules": {
         "handler": "handler.rules",
@@ -649,7 +649,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "RulesLambdaVersionelXMURV1188ffjvybv096yxaC6ZpbRHjy55DnenXc"
+        "versionLogicalId": "RulesLambdaVersionKhn12MgIPGCeJAzh2zg3urkpzwerZIXy7sZMVlsA"
       }
     },
     "configValidationMode": "warn",
@@ -671,7 +671,7 @@
     "artifact": "/home/ndennis/ext_media/git/node-business-rules/.serverless/node-business-rules.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/node-business-rules/dev/1613267711127-2021-02-14T01:55:11.127Z",
+    "artifactDirectoryName": "serverless/node-business-rules/dev/1613276720412-2021-02-14T04:25:20.412Z",
     "artifact": "node-business-rules.zip"
   }
 }
