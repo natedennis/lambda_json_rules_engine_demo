@@ -18,17 +18,6 @@ module.exports.hello = async (event) => {
   // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
 };
 
-
-module.exports.app = async (event, context) => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: 'AppDividend API is accessed',
-      input: event,
-    }),
-  };
-};
-
 module.exports.rules = async (event, context, callback) => {
   var person = JSON.parse(event.body);
   

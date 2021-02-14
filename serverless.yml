@@ -29,12 +29,6 @@ functions:
      - http:
          path: users/create
          method: get
-  app:
-    handler: handler.app
-    events:
-     - http:
-         path: app/get
-         method: get
   rules:
     handler: handler.rules
     events:
