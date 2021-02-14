@@ -19,8 +19,8 @@ module.exports.hello = async (event) => {
 };
 
 module.exports.rules = async (event, context, callback) => {
-  var person = JSON.parse(event.body);
-  
+  var person = JSON.parse(event.body).person;
+  console.log('person: ', person);
   const ruleEvents = await jsonRules(person);
   const response = {
     statusCode: 200,
